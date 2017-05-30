@@ -1,5 +1,6 @@
 # wafflebot
-They serve pancakes in hell.
+
+Your local neighborhood non sequitur spouting Slack task/chat bot. The chatbot is an independent service not in this repo.
 
 
 ## Run
