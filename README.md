@@ -1,6 +1,6 @@
 # wafflebot
 
-Your local neighborhood non sequitur spouting Slack task/chat bot. The chatbot is an independent service not in this repo.
+Your local neighborhood non sequitur spouting Slack task/chat bot. This component handles slack messaging and forwards non-task related messages to the chatbot service which is independent and not in this repo.
 
 
 ## Run
