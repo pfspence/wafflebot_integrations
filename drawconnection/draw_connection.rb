@@ -1,9 +1,9 @@
 #!/usr/local/bin/ruby
 
-require 'HTTParty'
-require 'Nokogiri'
-require 'JSON'
-require 'Pry'
+require 'httparty'
+require 'nokogiri'
+require 'json'
+require 'pry'
 require 'csv'
 
 class DrawConnection
@@ -73,7 +73,7 @@ class DrawConnection
 		# Pry.start(binding)
 		
 	end
-	def get_intersection(){
+	def get_intersection()
 		sequences = []
 		@wikipedia_urls.each do |url|
 			sequences.push(fetch(url))
@@ -84,7 +84,7 @@ class DrawConnection
 			seq1 = seq1 & seq
 		end
 		return seq1.sort_by {|x| x.length}.reverse
-	}
+	end
 end
 
 # draw_connection = DrawConnection.new("Bruce_Lee The_Muppets Reading_Rainbow")

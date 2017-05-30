@@ -1,6 +1,6 @@
 require 'net/http'
 require 'uri'
-require 'Pry'
+require 'pry'
 
 class UrlListManager
 

@@ -144,8 +144,9 @@ end
 
 def chatbot(message)
 	# If message is not matched then send to chatbot api.
+	message = message.gsub('<@U3EPYT17G>', '').gsub('<@U3CUMAPE2>', '').rchomp(" ").chomp(" ")
 	url_message = URI::encode(message)
-	uri = URI::HTTP.build([nil, "127.0.0.1", 5000, nil, "message=#{url_message}", nil])
+	uri = URI::HTTP.build([nil, "10.0.0.50", 5000, nil, "message=#{url_message}", nil])
 	puts uri.inspect
 	req = Net::HTTP::Get.new(uri)
 	req.add_field("Accept", "application/json")
@@ -229,5 +230,9 @@ $client.on :message do |data|
 	end
 		
 end
-
+class String
+  def rchomp(sep = $/)
+    self.start_with?(sep) ? self[sep.size..-1] : self
+  end
+end
 $client.start!
