@@ -2,4 +2,5 @@
 tweets.*
 chat_log.*
 watch_file.*
+intersecting_words.*
 .env

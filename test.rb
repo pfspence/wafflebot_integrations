@@ -32,5 +32,5 @@ def watch(message)
 
 end
 
-message = "@wafflebot add watch http://curious.codes/HereComesTheSun/OarFinBatBoatCornBam/Sweathogs/nothingatall/"
+message = "@wafflebot add watch http://curious.codes/"
 puts watch(message)
