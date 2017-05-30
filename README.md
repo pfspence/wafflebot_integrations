@@ -1,6 +1,7 @@
 # wafflebot
 They serve pancakes in hell.
 
+
 ## Run
 
 Build Docker image ```docker-compose build```
@@ -10,6 +11,19 @@ Run and Attach: ```docker-compose up```
 Run and Daemonize: ```docker-compose up -d``` 
 
 Stop: ```docker-compose down --volumes```
+
+
+# Usage in Slack
+
+```@wafflebot help``` Display this help message
+
+```@wafflebot analyze <text>``` Performs some pattern matching, character counts, and numerical sequence search.
+
+```@wafflebot watch <url>``` Add url to watch file. 
+
+```@wafflebot get twitter <@username> <number of tweets>``` Dump last n tweets.
+
+_All other messages are responded to in chatbot mode_ :robot_face:
 
 
 ## Trouble Shooting Tips
