@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+   wafflebot:
+     build: ./
+     volumes:
+       - ./:/code
+     command: ruby /code/wafflebot.rb
+     restart: always
+     env_file:
+       - ./.env

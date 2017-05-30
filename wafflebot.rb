@@ -15,8 +15,8 @@ require './tweet_fetcher'
 
 
 Slack.configure do |config|
-	config.token = ENV['SLACK_BOT_AUTONOMY_TOKEN']
-	# config.token = ENV['SLACK_TEAM_AWESOME_TOKEN']
+	# config.token = ENV['SLACK_BOT_AUTONOMY_TOKEN']
+	config.token = ENV['SLACK_TEAM_AWESOME_TOKEN']
 end
 $client = Slack::RealTime::Client.new
 $client.on :hello do
