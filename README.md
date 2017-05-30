@@ -13,7 +13,7 @@ Run and Daemonize: ```docker-compose up -d```
 Stop: ```docker-compose down --volumes```
 
 
-# Usage in Slack
+## Usage in Slack
 
 ```@wafflebot help``` Display this help message
 
